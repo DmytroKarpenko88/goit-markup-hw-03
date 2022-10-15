@@ -58,7 +58,7 @@ ul {
 }
 
 .container {
-  outline: 2px solid rgb(47, 89, 255);
+  /* outline: 2px solid rgb(47, 89, 255); */
   display: flex;
   box-sizing: border-box;
 
@@ -70,7 +70,7 @@ ul {
 }
 
 .section {
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
   padding: 94px 0;
 }
 
@@ -78,6 +78,9 @@ ul {
   display: flex;
 }
 
+.header {
+  border-bottom: 1px solid var(--line-color);
+}
 .header .link {
   display: block;
   padding-top: 32px;
@@ -136,6 +139,9 @@ a.current {
 
 .hero {
   background-color: var(--main-footer-background-color);
+  box-sizing: border-box;
+  min-height: 600px;
+  padding: 200px 0;
 }
 
 .hero-title {
@@ -179,7 +185,16 @@ a.current {
   background-color: var(--btn-active-color);
 }
 
+.filters-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
 .filter-btn {
+  display: block;
+  min-width: 130px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -190,6 +205,10 @@ a.current {
   background-color: var(--section-background-color);
   border-radius: 4px;
   cursor: pointer;
+}
+
+.filters-btn .item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filter-btn:hover,
@@ -261,7 +280,31 @@ a.current {
   color: var(--additional-text-color);
 }
 
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects .item {
+  max-width: 370px;
+  box-sizing: border-box;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border: 1px solid var(--container-color);
+}
+
+.projects .item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.projects .item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
 .project-title {
+  display: block;
+  margin: 20px 24px 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
@@ -269,6 +312,8 @@ a.current {
 }
 
 .project-example {
+  display: block;
+  margin: 0 24px 20px;
   font-size: 16px;
   line-height: calc(30 / 16);
   color: var(--additional-text-color);
