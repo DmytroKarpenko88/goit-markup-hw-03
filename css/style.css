@@ -339,8 +339,10 @@ a.current {
 }
 
 .projects .description {
-  padding: 20px 24px;
-  border: 1px solid var(--container-color);
+  padding: 19px 24px;
+  border-right: 1px solid var(--container-color);
+  border-bottom: 1px solid var(--container-color);
+  border-left: 1px solid var(--container-color);
 }
 
 .project-title {
