@@ -339,7 +339,7 @@ a.current {
 }
 
 .projects .description {
-  padding: 19px 24px;
+  padding: 20px 24px;
   border: 1px solid var(--container-color);
   border-top: 0;
 }
