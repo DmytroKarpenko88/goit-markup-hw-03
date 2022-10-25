@@ -72,7 +72,7 @@ button {
   display: block;
   cursor: pointer;
   border: none;
-  background-repeat: 4px;
+  border-radius: 4px;
 }
 
 .container {
@@ -89,20 +89,9 @@ button {
   padding-bottom: 94px;
 }
 
-.list {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
 .wrapper {
   display: flex;
   align-items: center;
-}
-
-.link {
-  text-decoration: none;
-  /* color: inherit; */
 }
 
 /* ---------- HEADER ----------- */
@@ -376,7 +365,7 @@ a.current {
 .address {
   margin-top: 20px;
   font-style: normal;
-  line-height: calc( 24 / 14);
+  line-height: calc(24 / 14);
 }
 
 .address-link {
